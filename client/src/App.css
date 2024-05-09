@@ -1,0 +1,99 @@
+body,
+html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.metrics-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding: 20px;
+  border: 1px solid none;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.metrics-form input,
+.metrics-form button {
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(152, 151, 151);
+}
+
+.metrics-form button {
+  background-color: #3148d1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.metrics-form button:hover {
+  background-color: #0056b3;
+}
+
+.metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 32px;
+  border: 1px solid none;
+  border-radius: 8px;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1.5fr;
+  align-items: center;
+}
+
+.table-header div,
+.table-row div {
+  text-align: left;
+  padding: 10px 15px;
+}
+
+.table-header {
+  font-weight: bold;
+  background-color: #d1dbff;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.table-row {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.table-row:nth-child(odd) {
+  background-color: #f1f4ff;
+}
+
+.chart-container {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .metrics-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metrics-form input,
+  .metrics-form button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
